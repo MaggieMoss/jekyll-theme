@@ -14,9 +14,12 @@ instagram: igusername
 # Contact
 phone: "916-276-1044" # This is my real number. You should text me.
 email: "hello@garrettboatman.com" # This is my real email address. Please don't email me.
-
+first_name: "Garrett"
+last_name: "Boatman"
 # Use this for production
-#sass:
-#    style: :compressed
+markdown: kramdown
+sass:
+   sass_dir: _sass
+   style: :compressed
 
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]

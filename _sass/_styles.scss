@@ -1,0 +1,28 @@
+
+
+
+.b-header {
+  border: 0.2em solid $primary;
+  font-family: $primary-font;
+  padding: 1em;
+  margin: 1em;
+}
+
+.b-header__name {
+  font-size: 4em;
+  color: $primary;
+}
+
+
+.b-social-menu {
+
+}
+
+.b-social-menu__link {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  background-color: $primary;
+  color: white;
+  display: inline-block;
+}

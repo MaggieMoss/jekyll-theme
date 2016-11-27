@@ -7,6 +7,10 @@ None of these variable are being imported anywhere, they're just here for your c
 *******
 */
 
+@import 'variables';
+@import 'skeleton';
+@import 'styles';
+
 body{
 	margin: 0;
 }
