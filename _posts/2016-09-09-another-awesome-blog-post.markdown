@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Super Awesome Blog Post"
+title: "Another blog post"
 date:   2016-06-24 18:20:24 -0400
-excerpt: ""
+excerpt: "Single shot, caramelization, dark crema aromatic crema eu grounds kopi-luwak single shot mazagran."
+
 ---
 
 Single shot, caramelization, dark crema aromatic crema eu grounds kopi-luwak single shot mazagran. Macchiato café au lait and aroma percolator breve sweet in dark brewed. Shop coffee con panna cream coffee irish eu crema wings.

@@ -8,28 +8,34 @@ excerpt: This is the greatest website on earth. Share! Like! Subscribe! I'm dead
 <!-- excerpt: If this isn't set, it'll pull your {{site.tagline}} for meta description-->
 
 <div class="container">
+  <div class="row">
+    <div class="columns twelve">
+      {% include nav_bar.html %}
+    </div>
+  </div>
   <!-- nav bar goes here -->
   <header class="b-header">
     <div class="row">
-      <div class="columns twelve">
+      <div class="columns eight">
         <h1 class="b-header__name">{{site.first_name}}</h1>
         <h1 class="b-header__name">{{site.last_name}}</h1>
       </div>
-    </div>
-    <div class="row">
-      <div class="columns twelve">
-        <ul class="b-social-menu u-pull-right">
-          <li class="b-social-menu__link">T</li>
-          <li class="b-social-menu__link">F</li>
-          <li class="b-social-menu__link">L</li>
-        </ul>
+      <div class="columns four">
+        {% include social-media-links.html %}
       </div>
     </div>
   </header>
-
-  <section>
-
-  </section>
-
-
+  <div class="b-spacer"></div>
+      {% for post in site.posts %}
+      {% assign mod = forloop.index | modulo: 2 %}
+      {% if mod != 0 %}
+        <div class="row">
+      {% endif %}
+        <div class="columns six">
+          {% include blog-card.html post=post %}
+        </div>
+         {% if mod == 0 %}
+         </div>
+         {% endif %}
+      {% endfor %}
 </div>

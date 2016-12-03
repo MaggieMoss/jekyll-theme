@@ -1,11 +1,25 @@
+body {
+  font-family: $primary-font;
+}
 
+.b-nav-bar {
+  text-align: right;
+}
+
+.b-nav-bar__link {
+  padding-top: 2em;
+  display: inline-block;
+  padding-left: 0.5em;
+  a {
+    text-decoration: none;
+    color: $primary;
+  }
+}
 
 
 .b-header {
   border: 0.2em solid $primary;
-  font-family: $primary-font;
-  padding: 1em;
-  margin: 1em;
+  padding: 2em;
 }
 
 .b-header__name {
@@ -15,7 +29,7 @@
 
 
 .b-social-menu {
-
+  // does this go here?
 }
 
 .b-social-menu__link {
@@ -23,6 +37,35 @@
   width: 2em;
   border-radius: 50%;
   background-color: $primary;
-  color: white;
   display: inline-block;
+  text-align: center;
+  .fa {
+    color: white;
+    padding-top: 7px;
+    cursor: pointer;
+  }
+}
+
+.b-blog-box {
+  border: 0.2em solid $primary;
+  border-top: 1em solid $primary;
+  padding: 2em;
+  margin-bottom: 1.5em;
+}
+
+.b-blog-box__link_container {
+  text-align: right;
+}
+
+.b-blog-box__button {
+  color: $primary;
+  border: 0.1em solid $primary;
+  padding: 0.3em 1.6em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+// I'm not sure how I feel about this;
+.b-spacer {
+  margin: 2em;
 }
