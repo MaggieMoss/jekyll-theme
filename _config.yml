@@ -5,6 +5,7 @@ url: "http://yourwebsite.com" # The base hostname & protocol for your site. Use 
 
 # Social
 socialimg: /img/social.jpg # be sure to change this image
+profileimg: /img/profile.jpg # change this to YOUR picture
 facebook: fbusername
 twitter: twusername
 github: ghusername

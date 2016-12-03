@@ -7,35 +7,34 @@ excerpt: This is the greatest website on earth. Share! Like! Subscribe! I'm dead
 <!-- fulltitle: This overrides the default page title, which is "{{page.tite}} | {{site.title}}" -->
 <!-- excerpt: If this isn't set, it'll pull your {{site.tagline}} for meta description-->
 
-<div class="container">
+
+<div class="row">
+  <div class="columns twelve">
+    {% include nav_bar.html %}
+  </div>
+</div>
+<!-- nav bar goes here -->
+<header class="b-header">
   <div class="row">
-    <div class="columns twelve">
-      {% include nav_bar.html %}
+    <div class="columns eight">
+      <h1 class="b-header__name">{{site.first_name}}</h1>
+      <h1 class="b-header__name">{{site.last_name}}</h1>
+    </div>
+    <div class="columns four">
+      {% include social-media-links.html %}
     </div>
   </div>
-  <!-- nav bar goes here -->
-  <header class="b-header">
-    <div class="row">
-      <div class="columns eight">
-        <h1 class="b-header__name">{{site.first_name}}</h1>
-        <h1 class="b-header__name">{{site.last_name}}</h1>
+</header>
+<div class="b-spacer"></div>
+    {% for post in site.posts %}
+    {% assign mod = forloop.index | modulo: 2 %}
+    {% if mod != 0 %}
+      <div class="row">
+    {% endif %}
+      <div class="columns six">
+        {% include blog-card.html post=post %}
       </div>
-      <div class="columns four">
-        {% include social-media-links.html %}
-      </div>
-    </div>
-  </header>
-  <div class="b-spacer"></div>
-      {% for post in site.posts %}
-      {% assign mod = forloop.index | modulo: 2 %}
-      {% if mod != 0 %}
-        <div class="row">
-      {% endif %}
-        <div class="columns six">
-          {% include blog-card.html post=post %}
-        </div>
-         {% if mod == 0 %}
-         </div>
-         {% endif %}
-      {% endfor %}
-</div>
+       {% if mod == 0 %}
+       </div>
+       {% endif %}
+    {% endfor %}
